@@ -1,0 +1,79 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #313338;
+}
+
+header {
+font-size: 12px;
+  background-color: #242629;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+section {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.portfolio-item {
+  --tw-bg-opacity: 1;
+  --tw-border-opacity: 1;
+  background-color: #242629;
+  border: rgb(17 24 39/var(--tw-border-opacity));
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.04);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #000000;
+}
+
+.portfolio-item-content {
+  padding: 1em;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+button {
+  background-color: #242629;
+  border: 2px solid black;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.downloads a {
+  text-decoration: underline;
+  padding: 10px;
+  color: aqua;
+}
+
+.pdownloads {
+  padding: 10px;
+}
